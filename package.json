@@ -4,7 +4,7 @@
   "description": "This is a simple tool to convert Axxon proto files to typescript interfaces.",
   "main": "index.js",
   "scripts": {
-    "ts:gen": "bash ./proto2ts.sh"
+    "ts:gen": "npx buf generate proto"
   },
   "keywords": [
     "proto2ts",
@@ -13,6 +13,9 @@
   "author": "Vitaly Zakutny",
   "license": "MIT",
   "dependencies": {
+    "@bufbuild/buf": "^1.31.0",
+    "@bufbuild/protobuf": "^1.9.0",
+    "@bufbuild/protoc-gen-es": "^1.9.0",
     "ts-proto": "^1.171.0"
   }
 }
