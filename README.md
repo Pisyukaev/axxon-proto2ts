@@ -30,7 +30,7 @@ Move all proto files/folders with proto to the `proto` directory
 Run the following command to convert the proto files to typescript interfaces
 
 ```bash
-pnpm start ts:gen
+pnpm run ts:gen
 ```
 
 The generated typescript interfaces will be saved in the `types` directory
